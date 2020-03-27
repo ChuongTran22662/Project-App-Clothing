@@ -18,7 +18,6 @@ const cartReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 cartItems: addItemToCart(state.cartItems, action.payload)
             }
-            console.log(state)
         default:
             return state;
     }
