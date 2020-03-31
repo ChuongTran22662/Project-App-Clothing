@@ -1,246 +1,222 @@
 const SHOP_DATA = {
-    hats: {
+    pistol: {
         id: 1,
-        title: 'Hats',
-        routeName: 'hats',
+        title: 'Pistol',
+        routeName: 'pistol',
         items: [
             {
                 id: 1,
-                name: 'Brown Brim',
-                imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+                name: 'GLOCK-17',
+                imageUrl: 'https://static.turbosquid.com/Preview/001221/426/HI/3D-glock-17-gen-4_Z.jpg',
                 price: 25
             },
             {
                 id: 2,
-                name: 'Blue Beanie',
-                imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-                price: 18
+                name: 'Smith & Wesson',
+                imageUrl: 'https://www.juliegolob.com/wp-content/uploads/2018/04/MP-M2.0-Compact-with-Crimson-Trace-Green-Laserguard.jpg',
+                price: 180
             },
             {
                 id: 3,
-                name: 'Brown Cowboy',
-                imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-                price: 35
+                name: 'FN Herstal FNP-9',
+                imageUrl: 'https://www.thefirearmblog.com/blog/wp-content/uploads/2015/10/Watermarked.jpg',
+                price: 350
             },
             {
                 id: 4,
-                name: 'Grey Brim',
-                imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-                price: 25
+                name: 'Beretta 92',
+                imageUrl: 'https://mumcare.org/wp-content/uploads/2018/01/mo-thay-sung.jpg',
+                price: 250
             },
             {
                 id: 5,
-                name: 'Green Beanie',
-                imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-                price: 18
+                name: 'Walther P99',
+                imageUrl: 'https://i.pinimg.com/originals/02/06/78/02067810fd6822ca0c797bca89071e61.jpg',
+                price: 180
             },
             {
                 id: 6,
-                name: 'Palm Tree Cap',
-                imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-                price: 14
+                name: 'QSZ-92',
+                imageUrl: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/548ad90f-e77b-4ade-9c90-34fe7fecbfc6/dbug3v7-7036ce95-18a2-4f42-95a2-b0232332bb17.png',
+                price: 140
             },
             {
                 id: 7,
-                name: 'Red Beanie',
-                imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-                price: 18
+                name: 'M1911',
+                imageUrl: 'https://thichdiy.com/wp-content/uploads/2016/05/33d67cf4b354c3243965cbca9f5c2340.jpg',
+                price: 180
             },
             {
                 id: 8,
-                name: 'Wolf Cap',
-                imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-                price: 14
+                name: 'MK 23',
+                imageUrl: 'https://sohanews.sohacdn.com/thumb_w/660/2017/photo-1-1507191240241.jpg',
+                price: 140
             },
             {
                 id: 9,
-                name: 'Blue Snapback',
-                imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-                price: 16
+                name: 'HS 2000',
+                imageUrl: 'https://preview.free3d.com/img/2012/11/2145880235046864700/s6q6cehw-900.jpg',
+                price: 160
             }
         ]
     },
-    sneakers: {
+    meleeWeapons: {
         id: 2,
-        title: 'Sneakers',
-        routeName: 'sneakers',
+        title: 'Melee Weapons',
+        routeName: 'meleeWeapons',
         items: [
             {
                 id: 10,
-                name: 'Adidas NMD',
-                imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-                price: 220
+                name: 'KNIFE',
+                imageUrl: 'https://forum.escapefromtarkov.com/uploads/monthly_2018_09/1342813099_Gt.jpg.4a05147a4ff06585b68007e487c5b829.jpg',
+                price: 2200
             },
             {
                 id: 11,
-                name: 'Adidas Yeezy',
-                imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-                price: 280
+                name: 'OPS',
+                imageUrl: 'https://cdn1.epicgames.com/ue/product/Screenshot/3-1920x1080-8b4ed8582f5cac02627373dd8f8ef303.jpg',
+                price: 2800
             },
             {
                 id: 12,
-                name: 'Black Converse',
-                imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-                price: 110
+                name: 'PAN',
+                imageUrl: 'https://gamek.mediacdn.vn/zoom/700_438/2018/5/2/image-1525237557509101203645.png',
+                price: 1100
             },
             {
                 id: 13,
-                name: 'Nike White AirForce',
-                imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-                price: 160
-            },
-            {
-                id: 14,
-                name: 'Nike Red High Tops',
-                imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-                price: 160
-            },
-            {
-                id: 15,
-                name: 'Nike Brown High Tops',
-                imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-                price: 160
-            },
-            {
-                id: 16,
-                name: 'Air Jordan Limited',
-                imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-                price: 190
-            },
-            {
-                id: 17,
-                name: 'Timberlands',
-                imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-                price: 200
+                name: 'SWORD',
+                imageUrl: 'https://sohanews.sohacdn.com/thumb_w/660/2015/kiem-0-1444389140407-0-122-1517-2185-crop-1444389154288.jpg',
+                price: 1600
             }
         ]
     },
-    jackets: {
+    shotgun: {
         id: 3,
-        title: 'Jackets',
-        routeName: 'jackets',
+        title: 'Shotgun',
+        routeName: 'shotgun',
         items: [
             {
                 id: 18,
-                name: 'Black Jean Shearling',
-                imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-                price: 125
+                name: 'S12K',
+                imageUrl: 'https://tabinoshop.com/wp-content/uploads/2020/01/mo-hinh-s12k-pubg-2.jpg',
+                price: 1250
             },
             {
                 id: 19,
-                name: 'Blue Jean Jacket',
-                imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-                price: 90
+                name: 'S1897',
+                imageUrl: 'https://i.ytimg.com/vi/BWLMZKpeBnY/maxresdefault.jpg',
+                price: 900
             },
             {
                 id: 20,
-                name: 'Grey Jean Jacket',
-                imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-                price: 90
+                name: 'S686',
+                imageUrl: 'https://static.turbosquid.com/Preview/2019/01/28__21_42_42/1.jpg6F05C736-5310-45BB-80BF-2B054EC37FAFLarge.jpg',
+                price: 900
             },
             {
                 id: 21,
-                name: 'Brown Shearling',
-                imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-                price: 165
+                name: 'SAWED OFF',
+                imageUrl: 'https://i.ytimg.com/vi/T6mDTBekSm4/maxresdefault.jpg',
+                price: 1650
             },
             {
                 id: 22,
-                name: 'Tan Trench',
-                imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-                price: 185
+                name: 'Win 94',
+                imageUrl: 'https://zilliongamer.com/uploads/pubg-mobile/all-rifle/sniper-rifle/win-94/win-94.jpg',
+                price: 1850
             }
         ]
     },
-    womens: {
+    rifle: {
         id: 4,
-        title: 'Womens',
-        routeName: 'womens',
+        title: 'Rifle',
+        routeName: 'rifle',
         items: [
             {
                 id: 23,
-                name: 'Blue Tanktop',
-                imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-                price: 25
+                name: 'M4A1',
+                imageUrl: 'https://i.pinimg.com/originals/2f/da/17/2fda17f5d55ff6909d8301af75b0aa6b.jpg',
+                price: 250
             },
             {
                 id: 24,
-                name: 'Floral Blouse',
-                imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-                price: 20
+                name: 'FN 2000',
+                imageUrl: 'https://i.pinimg.com/originals/8e/d2/b8/8ed2b8ba5612ac970dc94ab9e85b5057.jpg',
+                price: 200
             },
             {
                 id: 25,
-                name: 'Floral Dress',
-                imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-                price: 80
+                name: 'COLT AR15',
+                imageUrl: 'https://images7.alphacoders.com/303/thumb-1920-303642.jpg',
+                price: 800
             },
             {
                 id: 26,
-                name: 'Red Dots Dress',
-                imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-                price: 80
+                name: 'STEYR AUG',
+                imageUrl: 'https://cdna.artstation.com/p/assets/images/images/000/330/664/large/mert-iskenderoglu-02.jpg?1417526980',
+                price: 800
             },
             {
                 id: 27,
-                name: 'Striped Sweater',
-                imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-                price: 45
+                name: 'HK416',
+                imageUrl: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3ad524f9-adb4-4792-9779-cc572fd1e015/daiksw4-f16002cf-3585-48f1-b704-b4a156a93d25.jpg/v1/fill/w_1192,h_670,q_70,strp/bf4_s_hk416_render_test_by_thecsleader_daiksw4-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzNhZDUyNGY5LWFkYjQtNDc5Mi05Nzc5LWNjNTcyZmQxZTAxNVwvZGFpa3N3NC1mMTYwMDJjZi0zNTg1LTQ4ZjEtYjcwNC1iNGExNTZhOTNkMjUuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.zIRWkNOZBi1c87N_VmjQ7IQiuTco-9mF21RtvG5k_7o',
+                price: 450
             },
             {
                 id: 28,
-                name: 'Yellow Track Suit',
-                imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+                name: 'AK47',
+                imageUrl: 'https://i.pinimg.com/originals/64/18/0c/64180ce0e16af53daa203f6b0189613f.jpg',
                 price: 135
             },
             {
                 id: 29,
-                name: 'White Blouse',
-                imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-                price: 20
+                name: 'M4 Machine',
+                imageUrl: 'https://www.itl.cat/pngfile/big/12-128401_machine-gun-wallpaper-full-of-weapons.jpg',
+                price: 200
             }
         ]
     },
-    mens: {
+    sniper: {
         id: 5,
-        title: 'Mens',
-        routeName: 'mens',
+        title: 'Sniper',
+        routeName: 'sniper',
         items: [
             {
                 id: 30,
-                name: 'Camo Down Vest',
-                imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-                price: 325
+                name: 'AWM',
+                imageUrl: 'https://images3.alphacoders.com/550/thumb-1920-55099.jpg',
+                price: 3250
             },
             {
                 id: 31,
-                name: 'Floral T-shirt',
-                imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-                price: 20
+                name: 'L115A3 AWM',
+                imageUrl: 'https://www.elsetge.cat/myimg/f/12-128480_sniper-cool-guns-wallpaper-widescreen-de-armas-full.jpg',
+                price: 200
             },
             {
                 id: 32,
-                name: 'Black & White Longsleeve',
-                imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-                price: 25
+                name: 'Heckler & Koch PSG1',
+                imageUrl: 'https://c4.wallpaperflare.com/wallpaper/822/871/630/weapons-heckler-and-koch-hk417-wallpaper-preview.jpg',
+                price: 250
             },
             {
                 id: 33,
-                name: 'Pink T-shirt',
-                imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-                price: 25
+                name: 'Barrett M82',
+                imageUrl: 'https://wallpapercave.com/wp/wp3722135.jpg',
+                price: 250
             },
             {
                 id: 34,
-                name: 'Jean Long Sleeve',
-                imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-                price: 40
+                name: 'Cheytac-408 Cal',
+                imageUrl: 'https://c4.wallpaperflare.com/wallpaper/37/770/413/weapons-guns-cartridges-sniper-rifle-wallpaper-preview.jpg',
+                price: 400
             },
             {
                 id: 35,
-                name: 'Burgundy T-shirt',
-                imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-                price: 25
+                name: 'Dragunov',
+                imageUrl: 'https://i.pinimg.com/originals/df/80/b9/df80b9729f238e60c2d4e2ff18e0cdef.png',
+                price: 250
             }
         ]
     }

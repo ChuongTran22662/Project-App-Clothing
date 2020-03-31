@@ -1,9 +1,8 @@
 import React from 'react';
 import './checkout.styles.scss';
 import { connect } from 'react-redux';
-import StripeCheckouButton from '../../components/stripe-button/stripe-button.component';
 import { createStructuredSelector } from 'reselect';
-import { selectorCartItems, selectCartItems, selectorCartTotal } from '../../redux/cart/cart.selectors';
+import { selectCartItems, selectorCartTotal } from '../../redux/cart/cart.selectors';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import StripeCheckButton from '../../components/stripe-button/stripe-button.component';
 
