@@ -62,7 +62,7 @@ const SHOP_DATA = {
     },
     meleeWeapons: {
         id: 2,
-        title: 'Melee Weapons',
+        title: 'MeleeWeapons',
         routeName: 'meleeWeapons',
         items: [
             {

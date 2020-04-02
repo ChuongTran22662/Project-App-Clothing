@@ -18,10 +18,11 @@ export const createUserProfileDocument = async (userAuth, additonalData) => {
 
     const userRef = firestore.doc(`users/${userAuth.uid}`);
 
-    const snapShot = await userRef.get(); 
+    const snapShot = await userRef.get();
 
     if (!snapShot.exists) {
         const { displayName, email } = userAuth;
+
         const createdAt = new Date();
 
         try {
@@ -32,11 +33,41 @@ export const createUserProfileDocument = async (userAuth, additonalData) => {
                 ...additonalData
             })
         } catch (error) {
-            console.log('error create user', error.message); 
+            console.log('error create user', error.message);
         }
     }
 
     return userRef;
+}
+
+export const addCollectionAndDocuments = async (collectionKey, objecsToAdd) => {
+    const collectionRef = firestore.collection(collectionKey);
+
+    const batch = firestore.batch();
+    objecsToAdd.forEach(obj => {
+        const newDocRef = collectionRef.doc();
+        batch.set(newDocRef, obj);
+    })
+
+    return await batch.commit();
+}
+
+export const convertCollectionSnapshotToMap = collections => {
+    const tranformedCollection = collections.docs.map(doc => {
+        const { title, items } = doc.data();
+
+        return {
+            routeName: encodeURI(title.toLowerCase()),
+            id: doc.id,
+            title,
+            items
+        }
+    }) 
+
+    return tranformedCollection.reduce((accumulator, collection) => {
+        accumulator[collection.title.toLowerCase()] = collection;
+        return accumulator;
+    }, {});
 }
 
 firebase.initializeApp(config);
