@@ -7,7 +7,7 @@ import ShopPage from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './components/firebase/firebase.utils';
-//import { addCollectionAndDocuments } from './components/firebase/firebase.utils'
+import { addCollectionAndDocuments } from './components/firebase/firebase.utils'
 import { setCurrentUser } from './redux/user/user.actions';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../src/redux/user/user.selectors';

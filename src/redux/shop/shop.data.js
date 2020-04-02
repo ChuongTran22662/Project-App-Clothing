@@ -60,10 +60,10 @@ const SHOP_DATA = {
             }
         ]
     },
-    meleeWeapons: {
+    weapons: {
         id: 2,
-        title: 'MeleeWeapons',
-        routeName: 'meleeWeapons',
+        title: 'Weapons',
+        routeName: 'weapons',
         items: [
             {
                 id: 10,

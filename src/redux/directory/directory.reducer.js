@@ -13,13 +13,13 @@ const INITIAL_STATE = {
             linkUrl: 'shop/shotgun'
         },
         {
-            title: 'meleeWeapons',
+            title: 'weapons',
             imageUrl: 'https://cdn1.epicgames.com/ue/product/Screenshot/3-1920x1080-8b4ed8582f5cac02627373dd8f8ef303.jpg',
             id: 3,
-            linkUrl: 'shop/meleeWeapons'
+            linkUrl: 'shop/weapons'
         },
         {
-            title: 'Rifle',
+            title: 'rifle',
             imageUrl: 'https://file.vforum.vn/hinh/2015/06/vforum-weapon-army-wallpaper-telasm-twalls-3.jpg',
             size: 'large',
             id: 4,
