@@ -19,7 +19,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
   return (
     <div>
-      <GlobalStyle /> 
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
@@ -35,7 +35,7 @@ const App = ({ checkUserSession, currentUser }) => {
           }
         />
       </Switch>
-      <div>Chuong</div>
+      <div><a src="https://www.facebook.com/62pm3lovelyboy/">TranChuong</a></div>
     </div>
   );
 }
