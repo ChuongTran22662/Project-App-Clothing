@@ -4,8 +4,6 @@ import { persistStore } from 'redux-persist';
 
 import rootReducer from './root-reducer';
 
-import thunk from 'redux-thunk';
-
 import rootSaga from './root.saga';
 import createSagaMiddleware from 'redux-saga';
 
